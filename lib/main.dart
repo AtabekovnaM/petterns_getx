@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:petterns_getx/pages/create_page.dart';
 import 'package:petterns_getx/pages/home_page.dart';
 import 'package:petterns_getx/pages/update_page.dart';
@@ -18,11 +19,6 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: HomePage(),
-      routes: {
-        CreatePage.id: (context) => CreatePage(),
-        HomePage.id: (context) => HomePage(),
-        UpdatePage.id:(context) => UpdatePage(),
-      },
     );
   }
 }
